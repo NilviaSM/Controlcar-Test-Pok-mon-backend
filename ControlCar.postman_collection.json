@@ -1,0 +1,154 @@
+{
+	"info": {
+		"_postman_id": "7ad15e5f-2f84-4f72-abf8-5f054ba9d247",
+		"name": "ControlCar",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "15167288"
+	},
+	"item": [
+		{
+			"name": "Filtro Paginación",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/pokemon?page=1&limit=150",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"pokemon"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "limit",
+							"value": "150"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Filtro por nombre",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/pokemon?name=bulbasaur",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"pokemon"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "bulbasaur"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Filtro por tipo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/pokemon?type=fire",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"pokemon"
+					],
+					"query": [
+						{
+							"key": "type",
+							"value": "fire"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Filtro que no devuelvan datos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/pokemon?type=planta",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"pokemon"
+					],
+					"query": [
+						{
+							"key": "type",
+							"value": "planta"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Import Pokemons",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": "http://localhost:3000/api/pokemon/import"
+			},
+			"response": []
+		},
+		{
+			"name": "Capture Pokémon",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": "http://localhost:3000/api/pokemon/capture/29"
+			},
+			"response": []
+		},
+		{
+			"name": "Listar pokemones capturados",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3000/api/pokemon/captured"
+			},
+			"response": []
+		},
+		{
+			"name": "Liberar Pokémon",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": "http://localhost:3000/api/pokemon/release/67"
+			},
+			"response": []
+		}
+	]
+}
