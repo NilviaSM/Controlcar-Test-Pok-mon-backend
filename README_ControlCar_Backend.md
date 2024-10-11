@@ -39,6 +39,7 @@ La API cuenta con los siguientes endpoints para la gestión de pokémones:
 3. Crear la base de datos en MySQL utilizando un gestor como phpMyAdmin o MySQL Workbench.
 4. Modificar la configuración de la base de datos en `config/database.js` si es necesario.
 5. Ejecutar `npm start` para iniciar el servidor.
+6. puede que necesite `npm install express`
 
 ## Dependencias
 
